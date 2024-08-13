@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<SplitPane dividerPositions="0.22891566265060243" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chatting_app.HelloController">
+    <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="136.0" prefWidth="598.0">
+            <children>
+                <ImageView fitHeight="65.0" fitWidth="118.0" layoutX="240.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@LOGO.png" />
+                    </image>
+                </ImageView>
+            </children></AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+            <children>
+                <Label layoutX="263.0" layoutY="14.0" text="LOGIN" textAlignment="CENTER">
+                    <font>
+                        <Font name="Arial Black" size="20.0" />
+                    </font></Label>
+                <TextField fx:id="username" layoutX="239.0" layoutY="80.0" promptText="Enter Your Username" />
+                <TextField fx:id="passwordText" editable="false" layoutX="239.0" layoutY="139.0" visible="false" />
+                <PasswordField fx:id="passwd" layoutX="239.0" layoutY="139.0" promptText="Enter Your Password" />
+                <Line endX="299.39996337890625" endY="1.52587890625E-5" layoutX="299.0" layoutY="220.0" opacity="0.25" startX="-299.0" startY="1.52587890625E-5" strokeWidth="0.5" />
+                <Label layoutX="224.0" layoutY="228.0" prefHeight="11.0" prefWidth="150.0" text="Don't have an account yet ?" textAlignment="CENTER">
+                    <font>
+                        <Font name="Arial Bold Italic" size="10.0" />
+                    </font>
+                </Label>
+                <Hyperlink layoutX="261.0" layoutY="239.0" onAction="#onclick_Signup" text="SIGNUP">
+                    <font>
+                        <Font name="Arial Black" size="9.0" />
+                    </font>
+                </Hyperlink>
+                <Label layoutX="182.0" layoutY="87.0" text="Username" textAlignment="CENTER">
+                    <font>
+                        <Font name="Arial" size="10.0" />
+                    </font>
+                </Label>
+                <Label layoutX="183.0" layoutY="146.0" text="Password" textAlignment="CENTER">
+                    <font>
+                        <Font name="Arial" size="10.0" />
+                    </font>
+                </Label>
+                <RadioButton fx:id="visibililty_btn" layoutX="399.0" layoutY="143.0" mnemonicParsing="false" onAction="#check_visible">
+                </RadioButton>
+            </children></AnchorPane>
+    </items>
+</SplitPane>
