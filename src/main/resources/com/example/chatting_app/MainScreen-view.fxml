@@ -22,9 +22,9 @@
                     <font>
                         <Font name="Arial Black" size="20.0" />
                     </font></Label>
-                <TextField fx:id="username" layoutX="239.0" layoutY="80.0" promptText="Enter Your Username" />
-                <TextField fx:id="passwordText" editable="false" layoutX="239.0" layoutY="139.0" visible="false" />
-                <PasswordField fx:id="passwd" layoutX="239.0" layoutY="139.0" promptText="Enter Your Password" />
+                <TextField fx:id="usernameMainScreen" layoutX="239.0" layoutY="80.0" promptText="Enter Your Username" />
+                <TextField fx:id="passwordTextMainScreen" editable="false" layoutX="239.0" layoutY="139.0" visible="false" />
+                <PasswordField fx:id="PasswordMainScreen" layoutX="239.0" layoutY="139.0" promptText="Enter Your Password" />
                 <Line endX="299.39996337890625" endY="1.52587890625E-5" layoutX="299.0" layoutY="220.0" opacity="0.25" startX="-299.0" startY="1.52587890625E-5" strokeWidth="0.5" />
                 <Label layoutX="224.0" layoutY="228.0" prefHeight="11.0" prefWidth="150.0" text="Don't have an account yet ?" textAlignment="CENTER">
                     <font>
@@ -46,8 +46,9 @@
                         <Font name="Arial" size="10.0" />
                     </font>
                 </Label>
-                <RadioButton fx:id="visibililty_btn" layoutX="399.0" layoutY="143.0" mnemonicParsing="false" onAction="#check_visible">
+                <RadioButton fx:id="visibility_btnMainScreen" layoutX="399.0" layoutY="143.0" mnemonicParsing="false" onAction="#check_visibleMainScreen">
                 </RadioButton>
+            <Button layoutX="258.0" layoutY="181.0" mnemonicParsing="false" onAction="#Login_DB" text="LOGIN" />
             </children></AnchorPane>
     </items>
 </SplitPane>
